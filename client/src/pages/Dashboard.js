@@ -60,15 +60,21 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h1>Your quote: {quote || "No quote found"}</h1>
+      <h1 className="register-title ">
+        Welcome to Pulsar - {quote || "Enter your name"}
+      </h1>
       <form onSubmit={updateQuote}>
         <input
+          className="input-box"
+          input-box
           type="text"
-          placeholder="Quote"
+          placeholder="Name"
           value={tempQuote}
           onChange={(e) => setTempQuote(e.target.value)}
         />
-        <input type="submit" value="Update quote" />
+        <br />
+        <br />
+        <input type="submit" value="add" className="login" />
       </form>
     </div>
   );

@@ -32,9 +32,10 @@ function App() {
 
   return (
     <div>
-      <h1>Register</h1>
+      <h1 className="register-title">Register</h1>
       <form onSubmit={registerUser}>
         <input
+          className="input-box"
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
@@ -42,6 +43,7 @@ function App() {
         />
         <br />
         <input
+          className="input-box"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
@@ -49,13 +51,14 @@ function App() {
         />
         <br />
         <input
+          className="input-box"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           placeholder="Password"
         />
         <br />
-        <input type="submit" value="Register" />
+        <input type="submit" value="Register" className="register" />
       </form>
     </div>
   );

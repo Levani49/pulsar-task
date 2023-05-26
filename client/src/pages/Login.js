@@ -31,9 +31,10 @@ function App() {
 
   return (
     <div>
-      <h1>Login</h1>
+      <h1 className="login-title">Login</h1>
       <form onSubmit={loginUser}>
         <input
+          className="input-box"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
@@ -41,13 +42,14 @@ function App() {
         />
         <br />
         <input
+          className="input-box"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           placeholder="Password"
         />
         <br />
-        <input type="submit" value="Login" />
+        <input type="submit" value="Login" className="login" />
       </form>
     </div>
   );
